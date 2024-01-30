@@ -112,6 +112,7 @@ public enum SlackError: String, Error {
     case userListNotSupplied = "user_list_not_supplied"
     case userNotFound = "user_not_found"
     case userNotVisible = "user_not_visible"
+    case notAllowedTokenType = "not_allowed_token_type"
     // Client
     case clientNetworkError
     case clientJSONError
