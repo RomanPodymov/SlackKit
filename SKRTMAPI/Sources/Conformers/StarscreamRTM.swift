@@ -58,7 +58,7 @@ public class StarscreamRTM: RTMWebSocket, WebSocketDelegate {
 
     // MARK: - WebSocketDelegate
     
-    public func didReceive(event: WebSocketEvent, client: WebSocket) {
+    public func didReceive(event: Starscream.WebSocketEvent, client: Starscream.WebSocketClient) {
         switch event {
         case .connected:
             delegate?.didConnect()
@@ -81,7 +81,7 @@ public class StarscreamRTM: RTMWebSocket, WebSocketDelegate {
             break // unhandled
         case .cancelled:
             break // unhandled
-        @unknown default:
+        case .peerClosed:
             break // unhandled
         }
     }
