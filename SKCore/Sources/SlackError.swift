@@ -113,6 +113,7 @@ public enum SlackError: String, Error {
     case userNotFound = "user_not_found"
     case userNotVisible = "user_not_visible"
     case notAllowedTokenType = "not_allowed_token_type"
+    case unknownMethod = "unknown_method"
     // Client
     case clientNetworkError
     case clientJSONError
